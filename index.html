@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Kavya Foods</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- TOP INFO BAR -->
+    <div class="top-bar">
+      <!-- LEFT : LOGO -->
+      <div class="top-left">
+        <img src="./images/topIcon.jpeg" alt="Sri Kavya Foods Logo" />
+        <div class="brand-text">
+          <span class="brand-name">Sri Kavya Foods</span>
+          <span class="brand-tagline">Quality Food Products You Can Trust</span>
+        </div>
+      </div>
+
+      <!-- RIGHT : SOCIAL ICONS -->
+      <div class="top-social">
+        <div class="contact-item">
+          <span class="icon-circle">
+            <i class="fa-solid fa-phone"></i>
+          </span>
+          <a href="tel:+919949178328">+91 99491 78328</a>
+        </div>
+
+        <div class="contact-item">
+          <span class="icon-circle">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <a href="mailto:srikavyaf@gmail.com">srikavyaf@gmail.com</a>
+        </div>
+
+        <a
+          href="https://instagram.com/SriKavyaFoods"
+          target="_blank"
+          class="social insta"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://youtube.com/SriKavyaFoods"
+          target="_blank"
+          class="social youtube"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <nav>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#dealer">Dealership</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <img src="./images/banner.jpeg" alt="Banner Image" />
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>
+        Sri Kavya Foods is a trusted manufacturer and supplier of quality food
+        products. We focus on hygiene, freshness, and customer satisfaction.
+      </p>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section gray">
+      <h2>Our Products</h2>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="./images/product1.jpeg" alt="Product 1" />
+          <h3>Product Name 1</h3>
+          <p>Short product description</p>
+        </div>
+
+        <div class="product-card">
+          <img src="./images/product2.jpeg" alt="Product 2" />
+          <h3>Product Name 2</h3>
+          <p>Short product description</p>
+        </div>
+
+        <div class="product-card">
+          <img src="/images/product3.jpeg" alt="Product 3" />
+          <h3>Product Name 3</h3>
+          <p>Short product description</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEALER FORM -->
+    <section id="dealer" class="section">
+      <h2>Dealership / Enquiry</h2>
+
+      <!-- Netlify Form -->
+      <form
+        name="dealer-enquiry"
+        method="POST"
+        data-netlify="true"
+        class="form"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="text" name="phone" placeholder="Phone Number" />
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Submit Enquiry</button>
+      </form>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <h2>Get in Touch</h2>
+      <div class="contact-container">
+        <!-- LEFT SIDE -->
+        <div class="contact-left">
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h4>Contact Us</h4>
+              <p>+91 99491 78328</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h4>For Enquiry</h4>
+              <p>srikavyaf@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps?q=Nellore&output=embed"
+              loading="lazy"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="contact-right">
+          <h3>Have a question about our snacks or looking to partner with us?</h3>
+          <p class="contact-desc">
+            We'd love to hear from you. Reach out for enquiries, dealership
+            opportunities, or product details.
+          </p>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="tel" placeholder="Phone No" />
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 Sri Kavya Foods. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
