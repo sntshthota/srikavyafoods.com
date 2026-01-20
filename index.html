@@ -59,22 +59,25 @@
       </div>
     </div>
 
-    <!-- HEADER -->
-    <header class="header">
-      <div class="container">
-        <nav>
-          <a href="#about">About</a>
-          <a href="#products">Products</a>
-          <a href="#dealer">Dealership</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <img src="./images/banner.jpeg" alt="Banner Image" />
+    <section class="hero-wrapper">
+        <!-- TRANSPARENT HEADER -->
+        <header class="header overlay-header">
+            <div class="container">
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#products">Products</a>
+                    <a href="#dealer">Dealership</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+    
+        <!-- HERO BANNER -->
+        <div class="hero">
+            <img src="./images/banner.jpeg" alt="Banner Image">
+        </div>
     </section>
+    
 
     <!-- ABOUT -->
     <section id="about" class="section">
@@ -86,29 +89,21 @@
     </section>
 
     <!-- PRODUCTS -->
-    <section id="products" class="section gray">
-      <h2>Our Products</h2>
+    <section class="products-section">
 
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="./images/product1.jpeg" alt="Product 1" />
-          <h3>Product Name 1</h3>
-          <p>Short product description</p>
-        </div>
-
-        <div class="product-card">
-          <img src="./images/product2.jpeg" alt="Product 2" />
-          <h3>Product Name 2</h3>
-          <p>Short product description</p>
-        </div>
-
-        <div class="product-card">
-          <img src="/images/product3.jpeg" alt="Product 3" />
-          <h3>Product Name 3</h3>
-          <p>Short product description</p>
-        </div>
-      </div>
+        <h2 class="section-title">Best Sellers</h2>
+        <div class="product-grid" id="best-sellers"></div>
+    
+        <h2 class="section-title">New Products</h2>
+        <div class="product-grid" id="new-products"></div>
+    
+        <h2 class="section-title">All Products</h2>
+        <div class="product-grid" id="all-products"></div>
+    
     </section>
+    
+    <script src="./js/products.js"></script>
+    
 
     <!-- DEALER FORM -->
     <section id="dealer" class="section">
